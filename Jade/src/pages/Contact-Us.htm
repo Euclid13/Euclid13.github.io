@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #FAFAFC;
+            background-color: #ECF4F8;
         }
         .error, .success {
             color: red;
@@ -25,6 +25,7 @@
         }
     </style>
 </head>
+
 <body>
 
 <h2>Contact Us</h2>
@@ -34,14 +35,19 @@
 <form id="contactForm" action="https://formsubmit.co/William.P.Kahley@gmail.com" method="POST">
     <label for="name">Your Name:</label><br>
     <input type="text" id="name" name="name" maxlength="45"><br>
+	<br>
     <label for="email">Your Email (required):</label><br>
-    <input type="email" id="email" name="email" maxlength="45" required><br> <!-- Changed type to 'email' -->
+    <input type="email" id="email" name="email" maxlength="45" required><br> 
+	<br>
     <label for="message">Your Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="80"></textarea><br>
-    <input type="submit" value="Send"> <!-- Changed type to 'submit' -->
+    <textarea id="message" name="message" rows="20" cols="80"></textarea><br>
+	<br>
+    <input type="submit" value="Send">
 </form>
 
-<a href="index.htm">Back to Home Page</a>
+<div>
+<br>
+<a href="index.html">Home</a>
 
 <script>
 function validateEmail(email) {
@@ -49,11 +55,10 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-// Attach a submit event listener to your form
 document.getElementById("contactForm").addEventListener("submit", function(event){
     var email = document.getElementById("email").value;
     if (!validateEmail(email)) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); 
         document.getElementById("messageArea").innerHTML = '<div class="error">Please enter a valid email address.</div>';
     }
 });
@@ -61,4 +66,3 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
 </body>
 </html>
-
