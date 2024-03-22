@@ -1,0 +1,9 @@
+# Ignore temporary MS Word files 
+~WRL*.tmp 
+~$*
+*~$*
+# Ignore MS Word documents
+*.doc
+*.docx
+
+
