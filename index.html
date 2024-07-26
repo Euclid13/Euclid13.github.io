@@ -4,24 +4,60 @@
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
 <style>
-		body {
-			border: 5px solid #ECECEC;
-			background-color: #FAFAFC;
-			margin-top: 15px;
-			margin-left: 25px;
-			font-family: "Times New Roman";
-			font-size: 12pt;
-			color: black;
-		}
-		.border-container {
-			width: 11.5in;
-			margin: 15px;
-		}
+	body {
+		border: 5px solid #ECECEC;
+		background-color: #FAFAFC;
+		margin-top: 15px;
+		margin-left: 25px;
+		font-family: "Times New Roman";
+		font-size: 12pt;
+		color: black;
+	}
+	.border-container {
+		width: 11.5in;
+		margin: 15px;
+	}
+	.flex-container {
+		display: flex;
+		gap: 20px; /* Space between dropdowns */
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #EBF1F1;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		width: 600px; /* specify width of items */
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		height: 8px; /* specify height of items */
+		line-height: 8px; /* Align text vertically items */
+	}
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.header-box {
+		display: inline-block;
+		padding: 5px;
+		margin: 5px;
+		border-style: solid;
+	}
 </style>
 
 </head>
 
-<body bgcolor="#FAFAFC" lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+<body bgcolor="#FAFAFC" lang=EN-US link="#0563C1" vlink="#0563C1" style='word-wrap:break-word'>
 
 <div class="border-container">
 	<div class="page-content">
@@ -31,7 +67,7 @@
 			<tr>
 				<td width=134 rowspan=3 style='width:1.4in;border:solid #C5D9D9 1.0pt;background:black;padding:0in 5.4pt 0in 5.4pt'>
 					<br>
-					<img width=110 height=327 src="index_files/image001.jpg">
+					<img src="index_files/image001.jpg" width=110 height=327>
 					<br>
 					<br>
 					<br>
@@ -55,31 +91,55 @@
 				</td>
 			
 				<td width=883 style='width:661.9pt;border:solid #C5D9D9 1.0pt; border-left:none;background:white;padding:0in 5.4pt 0in 5.4pt'>
-					<img width=346 height=49 src="index_files/image002.jpg">
+					<img width=346 height=35 src="index_files/image002.jpg">
 				</td>
 			</tr>
 			
 			<tr>
-				<td width=883 valign=top style='width:661.9pt;border-top:none;border-left:none;border-bottom:solid #C5D9D9 1.0pt;border-right:solid #C5D9D9 1.0pt; background:#EBF1F1;padding:0in 1.0pt 0in 1.0pt'>
+				<td width=883 height=35 valign=top style='width:661.9pt;border-top:none;border-left:none;border-bottom:solid #C5D9D9 1.0pt;border-right:solid #C5D9D9 1.0pt; background:#EBF1F1;padding:0in 1.0pt 0in 1.0pt'>
 					
-					<a href="./Jade/src/pages/A00%20Jade%20Group%20A.htm" style="font-size: 14pt; font-weight: bold; margin-top: 9pt; margin-bottom: 3pt; display: inline-block;">
-						<span style="text-decoration:none; display:inline-block; width: 1em;">&nbsp;</span>Jade Group A
-					</a>
-					<br>
+					<div class="flex-container">
+						<div class="dropdown">
+							<div class="header-box" style="border-width: 2px; border-color: #0563C1; background-color: #E0E0E0;">
+								<span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold; color:#0563C1;">
+									Jade Group A
+								</span>
+							</div>
+							<div class="dropdown-content"> 
+								<a href="./Jade/src/pages/A01%20The%20Three%20Highest%20Immortals.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A01</b> &nbsp;&nbsp;The Three Highest Immortals</a>
+								<a href="./Jade/src/pages/A02%20Elephant,%20Humans%20Spiritual%20Quest.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A02</b> &nbsp;&nbsp;Elephant, Humans Spiritual Quest</a>
+								<a href="./Jade/src/pages/A03%20Lavender%20Elephant,%20Humans%20Spiritual%20Quest.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A03</b> &nbsp;&nbsp;Lavender Elephant, Humans Spiritual Quest</a>
+								<a href="./Jade/src/pages/A04%20Pair%20of%20Carp,%20Lotus.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A04</b> &nbsp;&nbsp;Pair of Carp, Lotus</a>
+								<a href="./Jade/src/pages/A05%20Prosperous%20Mountain%20Village.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A05</b> &nbsp;&nbsp;Prosperous Mountain Village</a>
+								<a href="./Jade/src/pages/A06%20Gai%20Choy%20&#33445;&#33756;%20Chinese%20Mustard%20Greens.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A06</b> &nbsp;&nbsp;Gai Choy Chinese Mustard Greens</a>
+								<a href="./Jade/src/pages/A07%20Guan%20Yin%20Screen.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A07</b> &nbsp;&nbsp;Guan Yin Screen</a>
+								<a href="./Jade/src/pages/A08%20Tree%20Peonies,%20Grapes,%20Cranes.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A08</b> &nbsp;&nbsp;Tree Peonies, Grapes, Cranes</a>
+								<a href="./Jade/src/pages/A09%20Lavender%20Guan%20Yin.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A09</b> &nbsp;&nbsp;Lavender Guan Yin</a>
+								<a href="./Jade/src/pages/A10%20Guan%20Yin,%20Immortals.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A10</b> &nbsp;&nbsp;Guan Yin, Immortals</a>
+								<a href="./Jade/src/pages/A11%20Guan%20Yin,%20Hotai,%20The%20Three%20Highest%20Immortals.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>A11</b> &nbsp;&nbsp;Guan Yin, Hotai, The Three Highest Immortals </a>
+							</div>
+						</div>
+						
+						<div class="dropdown">
+							<div class="header-box" style="border-width: 2px; border-color: #0563C1; background-color: #E0E0E0;">
+								<span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold; color:#0563C1;">
+									Jade Group B
+								</span>
+							</div>
+							<div class="dropdown-content"> 
+								<a href="./Jade/src/pages/B01%20Pair%20of%20Elephants.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B01</b> &nbsp;&nbsp;Pair of Elephants</a>
+								<a href="./Jade/src/pages/B02%20Shou%20&#23551;%20Holding%20Double%20Gourd.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B02</b> &nbsp;&nbsp;Shou Holding Double Gourd</a>
+								<a href="./Jade/src/pages/B03%20Shou%20&#23551;%20Holding%20Staff,%20Double%20Gourd,%20Peach.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B03</b> &nbsp;&nbsp;Shou Holding Staff, Double Gourd, Peach</a>
+								<a href="./Jade/src/pages/B04%20Hotai.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B04</b> &nbsp;&nbsp;Hotai</a>
+								<a href="./Jade/src/pages/B05%20Arrangement%20of%20Fruits,%20Flowers.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B05</b> &nbsp;&nbsp;Arrangement of Fruits, Flowers</a>
+								<a href="./Jade/src/pages/B06%20Guan%20Yin%20Seated.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B06</b> &nbsp;&nbsp;Guan Yin Seated</a>
+								<a href="./Jade/src/pages/B07%20Longma%20&#40857;&#39532;%20Dragon%20Horse.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B07</b> &nbsp;&nbsp;Longma Dragon Horse</a>
+								<a href="./Jade/src/pages/B08%20Mountain%20Landscape,%20Two%20Sages.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B08</b> &nbsp;&nbsp;Mountain Landscape, Two Sages</a>
+								<a href="./Jade/src/pages/B09%20Mountain%20Landscape,%20Wild%20Horses.htm">&nbsp;&nbsp;&nbsp;&nbsp;<b>B09</b> &nbsp;&nbsp;Mountain Landscape, Wild Horses</a>
+							</div>
+						</div>
+					</div>
 					
-					<a href="./Jade/src/pages/B00%20Jade%20Group%20B.htm" style="font-size: 14pt; font-weight: bold; margin-top: 9pt; margin-bottom: 3pt; display: inline-block;">
-						<span style="text-decoration:none; display:inline-block; width: 1em;">&nbsp;</span>Jade Group B
-					</a>
-					<br>
-					
-					<a href="./Jade/src/pages/Jade%20Vocabulary.htm" style="font-size: 14pt; font-weight: bold; margin-top: 9pt; margin-bottom: 3pt; display: inline-block;">
-						<span style="text-decoration:none; display:inline-block; width: 1em;">&nbsp;</span>Jade Vocabulary
-					</a>
-					<br>
-					
-					<a href="./Jade/src/pages/Purchase%20Details.htm" style="font-size: 14pt; font-weight: bold; margin-top: 9pt; margin-bottom: 3pt; display: inline-block;">
-						<span style="text-decoration:none; display:inline-block; width: 1em;">&nbsp;</span>Purchase Terms
-					</a>
 				</td>
 			</tr>
 			
@@ -90,18 +150,19 @@
 					We have an extensive collection of Chinese hand carved jade art.  All of the
 					pieces draw inspiration from the spirituality of Taoism, Buddhism, and other
 					subjects of traditional Chinese culture. </span></p>
-					<p><span style='font-size:14.0pt;color:black'>The indicated prices have been
-					determined by the assessments of people with decades of experience doing
-					appraisals of Chinese art, including jade carvings.  These prices are an
-					estimate, by people that are recognized for their integrity and impartial
-					valuations.  </span></p>
-					<p><span style='font-size:14.0pt;color:black'>If you have an interest in a
-					particular piece, we can commission a Written Appraisal.  This is a formal document
-					which states the name and credentials of appraiser; an accurate description
-					of the piece, numerous photos, and involves further effort to research more
-					comparisons for a more accurate valuation.  This would be available for your
-					review prior to purchase and included as part of shipping.<br>
+					
+					<p><span style='font-size:14.0pt;color:black'>
+					For each of the pieces of jade art there are images and for many also videos.&nbsp;&nbsp;<br>
+					However, this was all done before acquiring the means to do better.&nbsp;&nbsp;<br>
 					<br>
+					We are currently in the process of identifying and working with people who are qualified to do valuations of jade carvings.&nbsp;&nbsp;
+					When you find a piece that is of particular interest, these are the same people who we can commission for a Written Appraisal.&nbsp;&nbsp;
+					This is a formal document which states the name and credentials of appraiser; an accurate description
+					of the piece, numerous photos, and involves further effort to research more comparisons for a more accurate valuation.&nbsp;&nbsp;
+					This will be available for your review prior to purchase and included as part of shipping.<br>
+					<br>
+					<br>
+					If you have an interest in any of the jade art please call or email.<br>
 					<br>
 					</span><a href="mailto:William.P.Kahley@gmail.com">William.P.Kahley@gmail.com</a><span style='color:black'> <br>
 					301.963.7919<br>
